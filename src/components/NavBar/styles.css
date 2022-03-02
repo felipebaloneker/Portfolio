@@ -1,6 +1,10 @@
 nav li{
     display: inline;
     padding:1rem;
+    
+}
+li a:hover{
+    color:var(--text-highlight-color)
 }
 a{
     text-decoration: none;

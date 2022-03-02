@@ -3,6 +3,7 @@ import Typing from 'react-typing-animation';
 function Main(){
     return(
         <main>
+        {/* Home */}
         <section className="section" id="home">
             <div className="photo-container">
                 <img src={require('../../assets/images/photo.jpeg')} alt="Foto" />
@@ -19,6 +20,11 @@ function Main(){
                 </Typing>
             </div>
         </section>
+        {/*  About */}
+        <section className="section" id="about">
+
+        </section>
+
       </main>
     )
 }
