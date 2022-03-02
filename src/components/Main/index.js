@@ -1,5 +1,6 @@
 import './styles.css'
 import Typing from 'react-typing-animation';
+
 function Main(){
     return(
         <main>
@@ -25,7 +26,7 @@ function Main(){
             <div className="section-wrp">
                 <p><span>Descubra</span></p>
                 <h2>Sobre Mim</h2>
-                <div className='container'>
+                <div className='container text'>
                     <p>Olá me chamo Felipe Baloneker. Sou um Desenvolvedor Web atualmente moro no Rio de Janeiro
                     sou muito dedicado ao meu trabalho e sempre procuro aprender e partilhar conhecimento.</p>
                 </div>
@@ -143,6 +144,21 @@ function Main(){
                                 ></span>
                             </span>
                         </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        {/* Services */}
+        <section className="section" id="servicos">
+            <div className="section-wrp">
+                <p><span>O que faço?</span></p>
+                <h2>Meus Serviços</h2>
+                <div className="container">
+                    <div className='services'>
+                        <div className="service">
+                            <img src={require('../../assets/images/esboco.png')} alt="" />
+                            <h2><span>Criação de WebPages</span></h2>
+                        </div>
                     </div>
                 </div>
             </div>
