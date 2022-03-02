@@ -41,9 +41,102 @@ function Main(){
                                 ></span>
                             </span>
                         </div>
+                        {/* Html5 */}
+                        <div className="skill">
+                            <p>Html5</p>
+                            <span className="progress">
+                                <span className="progress-bar"
+                                style={{width:'80%'}}
+                                ></span>
+                            </span>
+                        </div>
+                        {/* Css */}
+                        <div className="skill">
+                            <p>Css3</p>
+                            <span className="progress">
+                                <span className="progress-bar"
+                                style={{width:'80%'}}
+                                ></span>
+                            </span>
+                        </div>
+                        {/* ReactJs */}
+                        <div className="skill">
+                            <p>ReactJs</p>
+                            <span className="progress">
+                                <span className="progress-bar"
+                                style={{width:'65%'}}
+                                ></span>
+                            </span>
+                        </div>
+                        {/* Nextjs */}
+                        <div className="skill">
+                            <p>NextJs</p>
+                            <span className="progress">
+                                <span className="progress-bar"
+                                style={{width:'65%'}}
+                                ></span>
+                            </span>
+                        </div>                       
+                        {/* Vuejs */}
+                        <div className="skill">
+                            <p>VueJs</p>
+                            <span className="progress">
+                                <span className="progress-bar"
+                                style={{width:'60%'}}
+                                ></span>
+                            </span>
+                        </div>                       
+                        {/* Nodejs */}
+                        <div className="skill">
+                            <p>NodeJs</p>
+                            <span className="progress">
+                                <span className="progress-bar"
+                                style={{width:'70%'}}
+                                ></span>
+                            </span>
+                        </div> 
+                        
                         {/* Ts */}
                         <div className="skill">
                             <p>Typescript</p>
+                            <span className="progress">
+                                <span className="progress-bar"
+                                style={{width:'60%'}}
+                                ></span>
+                            </span>
+                        </div>                          
+                        {/* TypeOrm */}
+                        <div className="skill">
+                            <p>TypeOrm</p>
+                            <span className="progress">
+                                <span className="progress-bar"
+                                style={{width:'60%'}}
+                                ></span>
+                            </span>
+                        </div> 
+                                               
+                        {/* Docker */}
+                        <div className="skill">
+                            <p>Docker</p>
+                            <span className="progress">
+                                <span className="progress-bar"
+                                style={{width:'60%'}}
+                                ></span>
+                            </span>
+                        </div>  
+
+                        {/* Bs */}
+                        <div className="skill">
+                            <p>BootStrap</p>
+                            <span className="progress">
+                                <span className="progress-bar"
+                                style={{width:'60%'}}
+                                ></span>
+                            </span>
+                        </div>                         
+                        {/* sql */}
+                        <div className="skill">
+                            <p>Sql</p>
                             <span className="progress">
                                 <span className="progress-bar"
                                 style={{width:'60%'}}
