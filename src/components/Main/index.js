@@ -158,6 +158,17 @@ function Main(){
                         <div className="service">
                             <img src={require('../../assets/images/esboco.png')} alt="" />
                             <h2><span>Criação de WebPages</span></h2>
+                            <p>Desenvolvimento de paginas com layout responsivo que podem ser visualizadas online.</p>
+                        </div>
+                        <div className="service">
+                            <img src={require('../../assets/images/planejamento.png')} alt="" />
+                            <h2><span>Costrução de DB</span></h2>
+                            <p>Banco de Dados construidos para armazenar, classificar e recuperar informações</p>
+                        </div>                        
+                        <div className="service">
+                            <img src={require('../../assets/images/monitor.png')} alt="" />
+                            <h2><span>Design de Interface</span></h2>
+                            <p>Layouts pensados na aparência e fluidez da navegação e na primeira impressão que o usuário terá ao entrar em contato. </p>
                         </div>
                     </div>
                 </div>
