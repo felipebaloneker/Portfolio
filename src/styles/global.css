@@ -13,4 +13,6 @@ html,body{
     --button-color:#FB1842;
     --text-color:#ffff;
     --text-highlight-color:#FB1842;
+    --text-light-color:#fd4769;
+    --background-image: url('../assets/images/background-600.jpg');
 }
