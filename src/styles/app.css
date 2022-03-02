@@ -1,0 +1,17 @@
+.App{
+    display: flex;
+    justify-content: center;
+}
+.content-wrp{
+    width:100%;
+    height:100vh;
+    max-width:1280px;
+    display: grid;
+    grid-template-rows: 6rem auto 4rem;
+    grid-template-areas: 'header' 'main''footer';
+}
+#home{
+    width: 100%;
+    height:100vh;
+    background-image: url('../../.github/background-600.jpg');
+}

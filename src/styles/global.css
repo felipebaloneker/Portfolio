@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+}
+html,body{
+    width:100%;
+    background-color: var(--background-color);
+    color:var(--text-color)
+}
+:root{
+    --background-color:#1E2233;
+    --button-color:#FB1842;
+    --text-color:#ffff;
+    --text-highlight-color:#FB1842;
+}
