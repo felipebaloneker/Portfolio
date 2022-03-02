@@ -11,7 +11,7 @@ function NavBar(){
         const top = document.querySelector(id).offsetTop;
 
         window.scroll({
-            top:top - 80,
+            top:top - 90,
             behavior: "smooth"
         })
     }
