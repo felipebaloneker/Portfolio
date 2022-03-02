@@ -32,7 +32,7 @@ function Main(){
                 </div>
                 <div className='container'>
                  <p><span>Habilidades:</span></p>
-                    <div className="skills">
+                    <div className="skills container-wrp">
                         {/* Js */}
                         <div className="skill">
                             <p>Javascript</p>
@@ -154,19 +154,19 @@ function Main(){
                 <p><span>O que faço?</span></p>
                 <h2>Meus Serviços</h2>
                 <div className="container">
-                    <div className='services'>
+                    <div className='container-wrp'>
                         <div className="service">
-                            <img src={require('../../assets/images/esboco.png')} alt="" />
+                            <img src={require('../../assets/images/esboco.png')} alt="Paginas imagem" />
                             <h2><span>Criação de WebPages</span></h2>
                             <p>Desenvolvimento de paginas com layout responsivo que podem ser visualizadas online.</p>
                         </div>
                         <div className="service">
-                            <img src={require('../../assets/images/planejamento.png')} alt="" />
+                            <img src={require('../../assets/images/planejamento.png')} alt="Banco de dados imagem" />
                             <h2><span>Costrução de DB</span></h2>
                             <p>Banco de Dados construidos para armazenar, classificar e recuperar informações</p>
                         </div>                        
                         <div className="service">
-                            <img src={require('../../assets/images/monitor.png')} alt="" />
+                            <img src={require('../../assets/images/monitor.png')} alt="interface Imagem" />
                             <h2><span>Design de Interface</span></h2>
                             <p>Layouts pensados na aparência e fluidez da navegação e na primeira impressão que o usuário terá ao entrar em contato. </p>
                         </div>
@@ -174,7 +174,34 @@ function Main(){
                 </div>
             </div>
         </section>
-
+        {/* Portfolio */}
+        <section className='section' id='portfolio'>
+            <div className="section-wrp">
+                <p><span>Explore</span></p>
+                <h2>Portfolio</h2>
+                <div className="container">
+                    <div className="container-wrp">
+                        <a className='modal-btn' href="https://github.com/felipebaloneker/Tarefas_React">
+                            <img src={require('../../assets/images/tarefas.png')} alt="projeto imagem" />
+                        </a>
+                        <a className='modal-btn' href="https://github.com/felipebaloneker/Chat-ReactJs">
+                            <img src={require('../../assets/images/chatJs.png')} alt="projeto imagem" />
+                        </a>
+                        <a className='modal-btn' href="https://github.com/felipebaloneker/ConversorMoedas-Vuejs">
+                            <img src={require('../../assets/images/conversor.gif')} alt="projeto imagem" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {/* Contato */}
+        <section className="section" id="contato">
+            <div className="section-wrp">
+                <p><span>Me encontre</span></p>
+                <h2>Contato</h2>
+                
+            </div>
+        </section>
       </main>
     )
 }

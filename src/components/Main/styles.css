@@ -52,8 +52,7 @@
 span{
     color:var(--text-light-color);
 }
-.services,
-.skills{
+.container-wrp{
     width:90%;
     align-self: flex-start;
     padding:1rem;
@@ -80,6 +79,12 @@ span{
     height:1.2rem;
     background-color: var(--text-light-color);
 }
+.skill:hover .progress .progress-bar{
+    background-color: var(--text-color);
+}
+.skill:hover .progress{
+   border: .1rem solid var(--text-color);
+}
 .service{
     display: flex;
     flex-direction: column;
@@ -90,6 +95,13 @@ span{
     padding:1rem;
     margin:1rem;
 }
+.service:hover{
+    border-color:var(--text-color);
+    transform: scale(1.02);
+}
+.service:hover span{
+    color:var(--text-color);
+}
 .service h2{
     font-size:1.15rem;
 }
@@ -99,4 +111,24 @@ span{
 }
 .service p{
     font-size:.9rem;
+}
+.container .modal-btn{
+    width:15rem;
+    height:15rem;
+    background-color: transparent;
+    border: .1rem solid var(--text-light-color);
+    cursor: pointer;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.modal-btn img{
+    height: 100%;
+}
+.modal-btn:hover{
+    transform: scale(1.02);
+    border-color: var(--text-color);
 }
