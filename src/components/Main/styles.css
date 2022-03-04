@@ -1,5 +1,6 @@
 #home{
     background: linear-gradient(#1d2031,#1d2031c4), var(--background-image);
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content:center;
