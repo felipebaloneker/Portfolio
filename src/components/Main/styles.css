@@ -10,7 +10,6 @@
     min-height:100vh;
     display: flex;
     justify-content: center;
-    align-items:center;
 }
 .section-wrp{
     width:80%;
@@ -19,13 +18,13 @@
     flex-direction: column;
 }
 .section-wrp p{
-    font-size: 1.15rem;
+    font-size: var(--font-small);
 }
 .section-wrp div{
     margin-bottom: 1rem;
 }
 .section-wrp h2{
-    font-size: 2.7rem;
+    font-size: var(--font-larger);
 }
 .section-wrp .container{
     min-width: 80%;
@@ -44,10 +43,10 @@
     border-radius: 100%;
 }
 .photo-container h2{
-    font-size: 2.5rem;
+    font-size:var(--font-larger);
 }
 .photo-container h3{
-    font-size: 1.7rem;
+    font-size: var(--font-medium);
     margin-top:-1rem;
 }
 span{
@@ -67,6 +66,7 @@ span{
 }
 .skill{
     margin:.5rem;
+    transition: .4s ease;
 }
 .skill .progress{
     display: flex;
@@ -95,6 +95,7 @@ span{
     overflow: hidden;
     padding:1rem;
     margin:1rem;
+    transition: .4s ease;
 }
 .service:hover{
     border-color:var(--text-color);
@@ -104,32 +105,80 @@ span{
     color:var(--text-color);
 }
 .service h2{
-    font-size:1.15rem;
+    font-size: var(--font-small);
 }
 .service img{
     width:5rem;
     height:5rem;
 }
 .service p{
-    font-size:.9rem;
+    font-size:var(--font-tiny);
 }
-.container .modal-btn{
-    width:15rem;
-    height:15rem;
+.container{
+    display:flex;
+    flex-direction: column;
+}
+.box-wrp{
+    width:100%;
+    display: flex;
+    margin-top:2rem;
+}
+.box-wrp .img-wrp {
+    max-width:15rem;
+    max-height:15rem;
     background-color: transparent;
-    border: .1rem solid var(--text-light-color);
+    border: .2rem solid var(--text-light-color);
     cursor: pointer;
-    border-radius: 1rem;
+    border-radius: 100%;
+
+    overflow: hidden;
+    transition: .4s ease;
+}
+.box-wrp .img-wrp a{
+    width:100%;
+    height:100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    
 }
-.modal-btn img{
-    height: 100%;
+.img-wrp a img{
+    height:100%;
 }
-.modal-btn:hover{
-    transform: scale(1.02);
-    border-color: var(--text-color);
+.box-wrp .img-wrp:hover{
+    transform: scale(1.09);
+}
+
+.box-wrp .text-wrp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+.text-wrp .text-area{
+    max-width:60%;
+    margin-top:4rem;
+}
+.text-wrp p{
+    font-size: var(--font-small);
+}
+.text-wrp h2{
+    font-size: var(--font-medium);
+}
+.right{
+    flex-direction: row-reverse;
+}
+/* Animação */
+[animation]{
+    opacity:0;
+    transition:.4s;
+}
+[animation='left']{
+    transform: translate3d(-5rem, 0, 0);
+}
+[animation='right']{
+    transform: translate3d(5rem, 0, 0);
+}
+[animation].animate{
+    opacity:1;
+    transform: translate3d(0,0,0);
 }

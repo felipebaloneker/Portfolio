@@ -16,4 +16,9 @@ html,body{
     --text-highlight-color:#FB1842;
     --text-light-color:#fd4769;
     --background-image: url('../assets/images/background-600.jpg');
+
+    --font-tiny:.9rem;
+    --font-small:1.09rem;
+    --font-medium:1.7rem;
+    --font-larger:2.5rem;
 }

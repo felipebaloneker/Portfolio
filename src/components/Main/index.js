@@ -1,7 +1,23 @@
 import './styles.css'
+import React, { useState, useEffect } from 'react';
 import Typing from 'react-typing-animation';
 
 function Main(){
+    // animação de opacidade
+    const animated = document.querySelectorAll('[animation]');
+    const animationClass = 'animate';
+    function scrollAnimation(){
+        const position = window.pageYOffset + ((window.innerHeight *3) / 4);
+            animated.forEach(function(item){
+                if((position) > item.offsetTop){
+                    item.classList.add(animationClass);
+                }
+                else{
+                    item.classList.remove(animationClass);
+                }
+            })
+        }   
+    window.addEventListener('scroll', scrollAnimation);
     return(
         <main>
         {/* Home */}
@@ -180,8 +196,7 @@ function Main(){
                 <p><span>Explore</span></p>
                 <h2>Portfolio</h2>
                 <div className="container">
-                    <div className="container-wrp">
-                        <a className='modal-btn' href="https://github.com/felipebaloneker/Tarefas_React">
+                        {/* <a className='modal-btn' href="https://github.com/felipebaloneker/Tarefas_React">
                             <img src={require('../../assets/images/tarefas.png')} alt="projeto imagem" />
                         </a>
                         <a className='modal-btn' href="https://github.com/felipebaloneker/Chat-ReactJs">
@@ -189,8 +204,46 @@ function Main(){
                         </a>
                         <a className='modal-btn' href="https://github.com/felipebaloneker/ConversorMoedas-Vuejs">
                             <img src={require('../../assets/images/conversor.gif')} alt="projeto imagem" />
-                        </a>
-                    </div>
+                        </a> */}
+                        <div className="box-wrp" animation='left'>
+                            <div className='img-wrp'>
+                                <a className='modal-btn' href="https://github.com/felipebaloneker/Chat-ReactJs">
+                                    <img src={require('../../assets/images/chatJs.png')} alt="projeto imagem" />
+                                </a>
+                            </div>
+                            <div className="text-wrp">
+                                <div className="text-area">
+                                    <h2>Project Name</h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolor, maxime unde pariatur iste sequi alias cumque tempore non vero suscipit dicta sapiente impedit modi, placeat temporibus aliquid, corrupti quibusdam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="box-wrp right" animation='right'>
+                            <div className='img-wrp'>
+                                <a className='modal-btn' href="https://github.com/felipebaloneker/Tarefas_React">
+                                    <img src={require('../../assets/images/tarefas.png')} alt="projeto imagem" />
+                                </a>
+                            </div>
+                            <div className="text-wrp">
+                                <div className="text-area">
+                                    <h2>Project Name</h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolor, maxime unde pariatur iste sequi alias cumque tempore non vero suscipit dicta sapiente impedit modi, placeat temporibus aliquid, corrupti quibusdam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="box-wrp" animation='left'>
+                            <div className='img-wrp'>
+                                <a className='modal-btn' href="https://github.com/felipebaloneker/Tarefas_React">
+                                    <img src={require('../../assets/images/tarefas.png')} alt="projeto imagem" />
+                                </a>
+                            </div>
+                            <div className="text-wrp">
+                                <div className="text-area">
+                                    <h2>Project Name</h2>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolor, maxime unde pariatur iste sequi alias cumque tempore non vero suscipit dicta sapiente impedit modi, placeat temporibus aliquid, corrupti quibusdam.</p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </section>
