@@ -17,5 +17,5 @@
     font-size: 1.3rem;
 }
 .logo span{
-    color:var(--text-highlight-color)
+    color:var(--text-highlight-color);
 }

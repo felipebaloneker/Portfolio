@@ -32,7 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:1rem;
+    padding:2rem;
 }
 .text-wrp .text-area{
     max-width:60%;

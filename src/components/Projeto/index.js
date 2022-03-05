@@ -1,7 +1,8 @@
 import './styles.css'
-function Projeto({link,image,title,text}){
+function Projeto({link,image,title,text,right}){
     return(
-        <div className="box-wrp" animation='left'>
+        <div className={right ? "box-wrp right": "box-wrp"} 
+        animation='left'>
             <div className='img-wrp'>
                 <a className='modal-btn' href={link}>
                     <img src={image} alt="projeto imagem" />

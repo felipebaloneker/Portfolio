@@ -147,6 +147,7 @@ function Main(){
                         image={require('../../assets/images/chatJs.png')}
                         title={'Projeto'}
                         text={'Projeto text'}
+                        right
                         />
                         <Projeto
                         link={"https://github.com/felipebaloneker/Tarefas_React"}
