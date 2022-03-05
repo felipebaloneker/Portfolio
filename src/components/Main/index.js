@@ -1,5 +1,6 @@
 import './styles.css'
 import Typing from 'react-typing-animation';
+import Service from '../Service'
 
 function Main(){
     // animação de opacidade
@@ -170,21 +171,21 @@ function Main(){
                 <h2>Meus Serviços</h2>
                 <div className="container">
                     <div className='container-wrp'>
-                        <div className="service" animation='left'>
-                            <img src={require('../../assets/images/esboco.png')} alt="Paginas imagem" />
-                            <h2><span>Criação de WebPages</span></h2>
-                            <p>Desenvolvimento de paginas com layout responsivo que podem ser visualizadas online.</p>
-                        </div>
-                        <div className="service"  animation='bottom'>
-                            <img src={require('../../assets/images/planejamento.png')} alt="Banco de dados imagem" />
-                            <h2><span>Costrução de DB</span></h2>
-                            <p>Banco de Dados construidos para armazenar, classificar e recuperar informações</p>
-                        </div>                        
-                        <div className="service" animation='right'>
-                            <img src={require('../../assets/images/monitor.png')} alt="interface Imagem" />
-                            <h2><span>Design de Interface</span></h2>
-                            <p>Layouts pensados na aparência e fluidez da navegação e na primeira impressão que o usuário terá ao entrar em contato. </p>
-                        </div>
+                        <Service
+                        image={require('../../assets/images/esboco.png')}
+                        title={'Criação de WebPages'}
+                        text={'Desenvolvimento de paginas com layout responsivo que podem ser visualizadas online.'}
+                        />
+                        <Service
+                        image={require('../../assets/images/planejamento.png')}
+                        title={'Costrução de DB'}
+                        text={'Banco de Dados construidos para armazenar, classificar e recuperar informações.'}
+                        />   
+                        <Service
+                        image={require('../../assets/images/monitor.png')}
+                        title={'Design de Interface'}
+                        text={'Layouts pensados na aparência e fluidez da navegação e na primeira impressão que o usuário terá ao entrar em contato.'}
+                        />
                     </div>
                 </div>
             </div>

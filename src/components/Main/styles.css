@@ -86,35 +86,6 @@ span{
 .skill:hover .progress{
    border: .1rem solid var(--text-color);
 }
-.service{
-    display: flex;
-    flex-direction: column;
-    height:15rem;
-    max-height:15rem;
-    border-radius: 1rem;
-    border: .1rem solid var(--text-light-color);
-    overflow: hidden;
-    padding:1rem;
-    margin:1rem;
-    transition: .4s ease;
-}
-.service:hover{
-    border-color:var(--text-color);
-    transform: scale(1.02);
-}
-.service:hover span{
-    color:var(--text-color);
-}
-.service h2{
-    font-size: var(--font-small);
-}
-.service img{
-    width:5rem;
-    height:5rem;
-}
-.service p{
-    font-size:var(--font-tiny);
-}
 .container{
     display:flex;
     flex-direction: column;
