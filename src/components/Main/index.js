@@ -2,40 +2,28 @@ import './styles.css'
 import Typing from 'react-typing-animation';
 import Service from '../Service'
 import Skill from '../Skill'
+import Projeto from '../Projeto';
 
 function Main(){
-    // animação de opacidade
-    const animated = document.querySelectorAll('[animation]');
-    const animationClass = 'animate';
-    function scrollAnimation(){
-        const position = window.pageYOffset + ((window.innerHeight *3) / 4);
-            animated.forEach(function(item){
-                if((position) >= item.offsetTop){
-                    item.classList.add(animationClass);
-                }
-                else{
-                    item.classList.remove(animationClass);
-                }
-            })
-        }   
-    window.addEventListener('scroll', scrollAnimation);
     return(
         <main>
         {/* Home */}
         <section className="section" id="home">
-            <div className="photo-container section-wrp">
-                <img src={require('../../assets/images/photo.jpeg')} alt="Foto" />
-                <h2>Felipe Baloneker</h2>
-                <h3><span>Desenvolvedor Web</span></h3>
-                <Typing speed={60}>
-                    <p>
-                        Desenvolvimento de Web Sites
-                        <Typing.Backspace count={40}/>
-                        Criação de Aplicações BackEnd
-                        <Typing.Backspace count={40}/>
-                        Criação de Aplicações FrontEnd
-                    </p>
-                </Typing>
+            <div className="section-wrp">
+                <div className="photo-container">
+                    <img src={require('../../assets/images/photo.jpeg')} alt="Foto" />
+                    <h2>Felipe Baloneker</h2>
+                    <h3><span>Desenvolvedor Web</span></h3>
+                    <Typing speed={60}>
+                        <p>
+                            Desenvolvimento de Web Sites
+                            <Typing.Backspace count={40}/>
+                            Criação de Aplicações BackEnd
+                            <Typing.Backspace count={40}/>
+                            Criação de Aplicações FrontEnd
+                        </p>
+                    </Typing>
+                </div>
             </div>
         </section>
         {/*  About */}
@@ -148,45 +136,24 @@ function Main(){
                 <p><span>Explore</span></p>
                 <h2>Portfolio</h2>
                 <div className="container">
-                        <div className="box-wrp" animation='left'>
-                            <div className='img-wrp'>
-                                <a className='modal-btn' href="https://github.com/felipebaloneker/Chat-ReactJs">
-                                    <img src={require('../../assets/images/chatJs.png')} alt="projeto imagem" />
-                                </a>
-                            </div>
-                            <div className="text-wrp">
-                                <div className="text-area">
-                                    <h2>Project Name</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolor, maxime unde pariatur iste sequi alias cumque tempore non vero suscipit dicta sapiente impedit modi, placeat temporibus aliquid, corrupti quibusdam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="box-wrp right" animation='right'>
-                            <div className='img-wrp'>
-                                <a className='modal-btn' href="https://github.com/felipebaloneker/Tarefas_React">
-                                    <img src={require('../../assets/images/tarefas.png')} alt="projeto imagem" />
-                                </a>
-                            </div>
-                            <div className="text-wrp">
-                                <div className="text-area">
-                                    <h2>Project Name</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolor, maxime unde pariatur iste sequi alias cumque tempore non vero suscipit dicta sapiente impedit modi, placeat temporibus aliquid, corrupti quibusdam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="box-wrp" animation='left'>
-                            <div className='img-wrp'>
-                                <a className='modal-btn' href="https://github.com/felipebaloneker/Tarefas_React">
-                                    <img src={require('../../assets/images/tarefas.png')} alt="projeto imagem" />
-                                </a>
-                            </div>
-                            <div className="text-wrp">
-                                <div className="text-area">
-                                    <h2>Project Name</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolor, maxime unde pariatur iste sequi alias cumque tempore non vero suscipit dicta sapiente impedit modi, placeat temporibus aliquid, corrupti quibusdam.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <Projeto
+                        link={"https://github.com/felipebaloneker/Chat-ReactJs"}
+                        image={require('../../assets/images/chatJs.png')}
+                        title={'Projeto'}
+                        text={'Projeto text'}
+                        />
+                        <Projeto
+                        link={"https://github.com/felipebaloneker/Tarefas_React"}
+                        image={require('../../assets/images/chatJs.png')}
+                        title={'Projeto'}
+                        text={'Projeto text'}
+                        />
+                        <Projeto
+                        link={"https://github.com/felipebaloneker/Tarefas_React"}
+                        image={require('../../assets/images/tarefas.png')}
+                        title={'Projeto'}
+                        text={'Projeto text'}
+                        />
                 </div>
             </div>
         </section>

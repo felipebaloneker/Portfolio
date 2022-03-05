@@ -1,12 +1,13 @@
 .App{
+    width:100vw;
     display: flex;
     justify-content: center;
 }
 .content-wrp{
     width:100%;
     height:100vh;
-    max-width:1280px;
+    max-width: 1280px;
     display: grid;
-    grid-template-rows: 6rem auto 4rem;
+    grid-template-rows: 2rem auto 4rem;
     grid-template-areas: 'header' 'main''footer';
 }

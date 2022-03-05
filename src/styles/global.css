@@ -6,7 +6,8 @@
 html,body{
     width:100%;
     background-color: var(--background-color);
-    color:var(--text-color)
+    color:var(--text-color);
+    overflow-x:hidden;
 }
 :root{
     --background-color:#1E2233;

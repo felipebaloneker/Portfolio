@@ -1,14 +1,13 @@
 .header{
-    width:98%;
-    max-width: 1280px;
+    width:100%;
     height:4rem;
     position:fixed;
-    padding:1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color:var(--text-color);
     z-index: 999;
+    background: var(--background-color);
 }
 .header.not-transparent{
     background: var(--background-color);
