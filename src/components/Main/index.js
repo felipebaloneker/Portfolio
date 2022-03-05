@@ -1,6 +1,7 @@
 import './styles.css'
 import Typing from 'react-typing-animation';
 import Service from '../Service'
+import Skill from '../Skill'
 
 function Main(){
     // animação de opacidade
@@ -50,116 +51,67 @@ function Main(){
                  <p><span>Habilidades:</span></p>
                     <div className="skills container-wrp" animation='left'>
                         {/* Js */}
-                        <div className="skill">
-                            <p>Javascript</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'70%'}}
-                                ></span>
-                            </span>
-                        </div>
+                        <Skill
+                        name={'Javascript'}
+                        progress={'70%'}
+                        />
                         {/* Html5 */}
-                        <div className="skill">
-                            <p>Html5</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'80%'}}
-                                ></span>
-                            </span>
-                        </div>
+                        <Skill
+                        name={'Html5'}
+                        progress={'80%'}
+                        />
                         {/* Css */}
-                        <div className="skill">
-                            <p>Css3</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'80%'}}
-                                ></span>
-                            </span>
-                        </div>
+                        <Skill
+                        name={'Css'}
+                        progress={'80%'}
+                        />
                         {/* ReactJs */}
-                        <div className="skill">
-                            <p>ReactJs</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'65%'}}
-                                ></span>
-                            </span>
-                        </div>
+                        <Skill
+                        name={'ReactJs'}
+                        progress={'65%'}
+                        />
                         {/* Nextjs */}
-                        <div className="skill">
-                            <p>NextJs</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'65%'}}
-                                ></span>
-                            </span>
-                        </div>                       
+                        <Skill
+                        name={'Javascript'}
+                        progress={'65%'}
+                        />                      
                         {/* Vuejs */}
-                        <div className="skill">
-                            <p>VueJs</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'60%'}}
-                                ></span>
-                            </span>
-                        </div>                       
+                        <Skill
+                        name={'VueJs'}
+                        progress={'60%'}
+                        />                       
                         {/* Nodejs */}
-                        <div className="skill">
-                            <p>NodeJs</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'70%'}}
-                                ></span>
-                            </span>
-                        </div> 
+                        <Skill
+                        name={'NodeJs'}
+                        progress={'70%'}
+                        />
                         
                         {/* Ts */}
-                        <div className="skill">
-                            <p>Typescript</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'60%'}}
-                                ></span>
-                            </span>
-                        </div>                          
+                        <Skill
+                        name={'TypeScript'}
+                        progress={'65%'}
+                        />                       
                         {/* TypeOrm */}
-                        <div className="skill">
-                            <p>TypeOrm</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'60%'}}
-                                ></span>
-                            </span>
-                        </div> 
-                                               
+                        <Skill
+                        name={'TypeOrm'}
+                        progress={'60%'}
+                        />
                         {/* Docker */}
-                        <div className="skill">
-                            <p>Docker</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'60%'}}
-                                ></span>
-                            </span>
-                        </div>  
+                        <Skill
+                        name={'Docker'}
+                        progress={'60%'}
+                        />
 
                         {/* Bs */}
-                        <div className="skill">
-                            <p>BootStrap</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'60%'}}
-                                ></span>
-                            </span>
-                        </div>                         
+                        <Skill
+                        name={'BootStrap'}
+                        progress={'60%'}
+                        />                        
                         {/* sql */}
-                        <div className="skill">
-                            <p>Sql</p>
-                            <span className="progress">
-                                <span className="progress-bar"
-                                style={{width:'60%'}}
-                                ></span>
-                            </span>
-                        </div> 
+                        <Skill
+                        name={'Sql'}
+                        progress={'60%'}
+                        />
                     </div>
                 </div>
             </div>
@@ -196,15 +148,6 @@ function Main(){
                 <p><span>Explore</span></p>
                 <h2>Portfolio</h2>
                 <div className="container">
-                        {/* <a className='modal-btn' href="https://github.com/felipebaloneker/Tarefas_React">
-                            <img src={require('../../assets/images/tarefas.png')} alt="projeto imagem" />
-                        </a>
-                        <a className='modal-btn' href="https://github.com/felipebaloneker/Chat-ReactJs">
-                            <img src={require('../../assets/images/chatJs.png')} alt="projeto imagem" />
-                        </a>
-                        <a className='modal-btn' href="https://github.com/felipebaloneker/ConversorMoedas-Vuejs">
-                            <img src={require('../../assets/images/conversor.gif')} alt="projeto imagem" />
-                        </a> */}
                         <div className="box-wrp" animation='left'>
                             <div className='img-wrp'>
                                 <a className='modal-btn' href="https://github.com/felipebaloneker/Chat-ReactJs">
