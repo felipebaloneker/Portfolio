@@ -1,5 +1,4 @@
 import './styles.css'
-import React, { useState, useEffect } from 'react';
 import Typing from 'react-typing-animation';
 
 function Main(){
@@ -9,7 +8,7 @@ function Main(){
     function scrollAnimation(){
         const position = window.pageYOffset + ((window.innerHeight *3) / 4);
             animated.forEach(function(item){
-                if((position) > item.offsetTop){
+                if((position) >= item.offsetTop){
                     item.classList.add(animationClass);
                 }
                 else{
@@ -48,7 +47,7 @@ function Main(){
                 </div>
                 <div className='container'>
                  <p><span>Habilidades:</span></p>
-                    <div className="skills container-wrp">
+                    <div className="skills container-wrp" animation='left'>
                         {/* Js */}
                         <div className="skill">
                             <p>Javascript</p>
@@ -171,17 +170,17 @@ function Main(){
                 <h2>Meus Serviços</h2>
                 <div className="container">
                     <div className='container-wrp'>
-                        <div className="service">
+                        <div className="service" animation='left'>
                             <img src={require('../../assets/images/esboco.png')} alt="Paginas imagem" />
                             <h2><span>Criação de WebPages</span></h2>
                             <p>Desenvolvimento de paginas com layout responsivo que podem ser visualizadas online.</p>
                         </div>
-                        <div className="service">
+                        <div className="service"  animation='bottom'>
                             <img src={require('../../assets/images/planejamento.png')} alt="Banco de dados imagem" />
                             <h2><span>Costrução de DB</span></h2>
                             <p>Banco de Dados construidos para armazenar, classificar e recuperar informações</p>
                         </div>                        
-                        <div className="service">
+                        <div className="service" animation='right'>
                             <img src={require('../../assets/images/monitor.png')} alt="interface Imagem" />
                             <h2><span>Design de Interface</span></h2>
                             <p>Layouts pensados na aparência e fluidez da navegação e na primeira impressão que o usuário terá ao entrar em contato. </p>

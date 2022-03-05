@@ -90,6 +90,7 @@ span{
     display: flex;
     flex-direction: column;
     height:15rem;
+    max-height:15rem;
     border-radius: 1rem;
     border: .1rem solid var(--text-light-color);
     overflow: hidden;
@@ -177,6 +178,9 @@ span{
 }
 [animation='right']{
     transform: translate3d(5rem, 0, 0);
+}
+[animation='bottom']{
+    transform: translate3d(0, 5rem, 0);
 }
 [animation].animate{
     opacity:1;
