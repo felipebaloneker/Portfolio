@@ -30,12 +30,11 @@
 
 .box-wrp .text-wrp{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:2rem;
+    justify-content: flex-start;
+    padding:1rem 2rem 1rem 2rem;
 }
 .text-wrp .text-area{
-    max-width:60%;
+    max-width:50%;
     margin-top:4rem;
 }
 .text-wrp p{
@@ -46,4 +45,7 @@
 }
 .right{
     flex-direction: row-reverse;
+}
+.right .text-wrp{
+    justify-content: flex-end;
 }
