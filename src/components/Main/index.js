@@ -1,11 +1,23 @@
 import './styles.css'
 import Typing from 'react-typing-animation';
+import { useRef } from 'react';
 import Service from '../Service'
 import Skill from '../Skill'
 import Projeto from '../Projeto';
+import emailjs from '@emailjs/browser';
+
 import { AiFillTwitterCircle } from "react-icons/ai";
 function Main(){
-    function sendEmail(){}
+    const form = useRef();
+    const  sendEmail = (e)=> {
+        e.preventDefault();
+        emailjs.sendForm('gmailMessage','template_zi9n9wa',e.target,'oR5aq8I1WlbGBngQv').then((result)=>{
+            alert("Mensagem enviada com sucesso!")
+        },(err)=>{
+            alert(err.message)
+        })
+        e.target.reset();
+    }
     return(
         <main>
         {/* Home */}
@@ -180,19 +192,19 @@ function Main(){
                 <h2>Contato</h2>
                 <p>Tem alguma ideia e precisa de um Desenvolvedor?</p>
                 <div className="container">
-                    <form action={sendEmail}>
+                    <form onSubmit={sendEmail} ref={form}>
                         <div className='form-container'>
                             <div className='form-text'>
                                 <label>Nome:</label>
-                                <input type="text" autoFocus className='from-btn' required placeholder='Seu nome' />
+                                <input type="text" name="user_name" autoFocus className='from-btn' required placeholder='Seu nome' />
                             </div>
                             <div className='form-text'>
                                 <label>Email:</label>
-                                <input type="email" className='form-btn' required placeholder='Seu email' />
+                                <input type="email" name="user_email" className='form-btn' required placeholder='Seu email' />
                             </div>
-                            <div className='form-area'> 
+                            <div className='form-area' > 
                                 <label>Mensagem:</label>
-                                <textarea name="" id="" cols="30" rows="8"></textarea>
+                                <textarea name="message" id="" cols="30" rows="8"></textarea>
                             </div>
                             <input type="submit" className='submit-btn'value="Enviar Mensagem"/>
                         </div>
