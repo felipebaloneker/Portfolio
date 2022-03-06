@@ -188,7 +188,7 @@ function Main(){
                             </div>
                             <div className='form-text'>
                                 <label>Email:</label>
-                                <input type="email" className='form-btn' required placeholder='Seu nome' />
+                                <input type="email" className='form-btn' required placeholder='Seu email' />
                             </div>
                             <div className='form-area'> 
                                 <label>Mensagem:</label>
