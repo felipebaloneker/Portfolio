@@ -5,6 +5,7 @@ import Skill from '../Skill'
 import Projeto from '../Projeto';
 import { AiFillTwitterCircle } from "react-icons/ai";
 function Main(){
+    function sendEmail(){}
     return(
         <main>
         {/* Home */}
@@ -177,8 +178,26 @@ function Main(){
             <div className="section-wrp">
                 <p><span>Me encontre</span></p>
                 <h2>Contato</h2>
+                <p>Tem alguma ideia e precisa de um Desenvolvedor?</p>
                 <div className="container">
-                    <div className="contact">
+                    <form action={sendEmail}>
+                        <div className='form-container'>
+                            <div className='form-text'>
+                                <label>Nome:</label>
+                                <input type="text" autoFocus className='from-btn' required placeholder='Seu nome' />
+                            </div>
+                            <div className='form-text'>
+                                <label>Email:</label>
+                                <input type="email" className='form-btn' required placeholder='Seu nome' />
+                            </div>
+                            <div className='form-area'> 
+                                <label>Mensagem:</label>
+                                <textarea name="" id="" cols="30" rows="8"></textarea>
+                            </div>
+                            <input type="submit" className='submit-btn'value="Enviar Mensagem"/>
+                        </div>
+                    </form>
+                    <div className="social-icons">
                         <a href="">
                             <AiFillTwitterCircle size={50}/>
                         </a>

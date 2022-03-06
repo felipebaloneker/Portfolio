@@ -13,6 +13,7 @@ html,body{
 }
 :root{
     --background-color:#1E2233;
+    --background-light:#1d2031;
     --button-color:#FB1842;
     --button-color-hover:#0f111a;
     --text-color:#ffff;
