@@ -111,3 +111,19 @@ span{
 .right{
     flex-direction: row-reverse;
 }
+.contact{
+    width:50%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.contact a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--button-color);
+    padding:1rem;
+}
+.contact a:hover{
+    transform: scale(1.15);
+}

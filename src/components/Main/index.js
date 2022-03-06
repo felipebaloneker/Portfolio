@@ -3,7 +3,7 @@ import Typing from 'react-typing-animation';
 import Service from '../Service'
 import Skill from '../Skill'
 import Projeto from '../Projeto';
-
+import { AiFillTwitterCircle } from "react-icons/ai";
 function Main(){
     return(
         <main>
@@ -140,7 +140,7 @@ function Main(){
                         link={"https://github.com/felipebaloneker/Chat-ReactJs"}
                         image={require('../../assets/images/chatJs.png')}
                         title={'Chat ReactJS'}
-                        text={'Chat em tempo real onde usuarios podem interagir entre si. Utiliza ReactJs com Typescript e css para o FrontEnd tem seu proprio BackEnd em NodeJs e Typeorm onde as mensagens são salvas.'}
+                        text={'Chat em tempo real onde usuários podem interagir entre si. Utiliza ReactJs com Typescript e css para o FrontEnd tem seu proprio BackEnd em NodeJs e Typeorm onde as mensagens são salvas.'}
                         />
                         <Projeto
                         link={"https://github.com/felipebaloneker/MusicPlayer-ReactNative"}
@@ -165,8 +165,8 @@ function Main(){
                         <Projeto
                         link={"https://github.com/felipebaloneker/Tarefas_React"}
                         image={require('../../assets/images/tarefas.png')}
-                        title={'Tarefas com react'}
-                        text={'Uma to do List onde usuario pode criar tarefas, marca-las como concluida e visualizar suas informações.'}
+                        title={'Tarefas'}
+                        text={'Uma to do List em ReactJs onde usuário pode criar tarefas, marca-las como concluida e visualizar suas informações.'}
                         />
 
                 </div>
@@ -177,7 +177,28 @@ function Main(){
             <div className="section-wrp">
                 <p><span>Me encontre</span></p>
                 <h2>Contato</h2>
-                
+                <div className="container">
+                    <div className="contact">
+                        <a href="">
+                            <AiFillTwitterCircle size={50}/>
+                        </a>
+                        <a href="">
+                            <AiFillTwitterCircle size={50}/>
+                        </a>
+                        <a href="">
+                            <AiFillTwitterCircle size={50}/>
+                        </a>
+                        <a href="">
+                            <AiFillTwitterCircle size={50}/>
+                        </a>
+                        <a href="">
+                            <AiFillTwitterCircle size={50}/>
+                        </a>
+                        <a href="">
+                            <AiFillTwitterCircle size={50}/>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
       </main>
