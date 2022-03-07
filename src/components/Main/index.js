@@ -7,6 +7,12 @@ import Projeto from '../Projeto';
 import emailjs from '@emailjs/browser';
 
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillFacebook } from "react-icons/ai";
+import { AiFillGithub} from "react-icons/ai";
+
+
 function Main(){
     const form = useRef();
     const  sendEmail = (e)=> {
@@ -210,23 +216,20 @@ function Main(){
                         </div>
                     </form>
                     <div className="social-icons">
-                        <a href="">
+                        <a href="https://twitter.com/felipebaloneke2">
                             <AiFillTwitterCircle size={50}/>
                         </a>
-                        <a href="">
-                            <AiFillTwitterCircle size={50}/>
+                        <a href="https://www.instagram.com/felipebaloneker/">
+                            <AiFillInstagram size={50}/>
                         </a>
-                        <a href="">
-                            <AiFillTwitterCircle size={50}/>
+                        <a href="https://www.facebook.com/felipe.balonekerferreira/">
+                            <AiFillFacebook size={50}/>
                         </a>
-                        <a href="">
-                            <AiFillTwitterCircle size={50}/>
+                        <a href="https://www.linkedin.com/in/felipe-baloneker/">
+                            <AiFillLinkedin size={50}/>
                         </a>
-                        <a href="">
-                            <AiFillTwitterCircle size={50}/>
-                        </a>
-                        <a href="">
-                            <AiFillTwitterCircle size={50}/>
+                        <a href="https://github.com/felipebaloneker">
+                            <AiFillGithub size={50}/>
                         </a>
                     </div>
                 </div>

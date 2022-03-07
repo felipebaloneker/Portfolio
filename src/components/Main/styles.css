@@ -77,7 +77,6 @@ span{
     display: flex;
     margin-top:2rem;
 }
-
 .box-wrp .img-wrp a{
     width:100%;
     height:100%;
@@ -110,22 +109,6 @@ span{
 }
 .right{
     flex-direction: row-reverse;
-}
-.social-icons{
-    width:50%;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-}
-.social-icons a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:var(--button-color);
-    padding:1rem;
-}
-.social-icons a:hover{
-    transform: scale(1.15);
 }
 
 .form-container{
@@ -169,4 +152,21 @@ span{
     border-radius: .2rem;
     cursor:pointer;
 
+}
+.social-icons{
+    width:50%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.social-icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--button-color);
+    padding:1rem;
+    transition: .4s ease;
+}
+.social-icons a:hover{
+    transform: scale(1.15);
 }
