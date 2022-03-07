@@ -10,6 +10,7 @@ function NavBar(){
         const id = element.getAttribute('href');
         const to = document.querySelector(id).offsetTop;
         window.scroll({top: to - 90 , left: 0, behavior: 'auto'});
+        openMenuClick()
     }
 
     const openMenuClick = ()=>{
