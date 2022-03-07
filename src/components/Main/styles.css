@@ -170,3 +170,20 @@ span{
 .social-icons a:hover{
     transform: scale(1.15);
 }
+
+@media(max-width: 1000px){
+    .container-wrp{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .section-wrp .container{
+        width: 100%;
+        padding: 0;
+
+    }
+    .skills{
+        width: 90%;
+    }
+}

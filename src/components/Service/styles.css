@@ -1,8 +1,10 @@
 .service{
     display: flex;
     flex-direction: column;
-    height:15rem;
+    width: 70%;
+    height:70%;
     max-height:15rem;
+    max-width: 15rem;
     border-radius: 1rem;
     border: .1rem solid var(--text-light-color);
     overflow: hidden;
@@ -26,4 +28,16 @@
 }
 .service p{
     font-size:var(--font-tiny);
+}
+@media(max-width: 1000px){
+    .service{
+        margin: 0;
+        padding: 1.2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .service h2{
+        font-size: var(--font-tiny);
+    }
+
 }

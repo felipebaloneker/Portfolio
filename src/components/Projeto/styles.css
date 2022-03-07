@@ -51,3 +51,14 @@
 .right .text-wrp{
     justify-content: flex-end;
 }
+@media(max-width: 1000px){
+    .box-wrp .img-wrp {
+        width: 10vw;
+        height: 20vh;
+        min-width: 10rem;
+        max-height: 10rem;
+    }
+    .text-wrp .text-area{
+        max-width: 100%;
+    }
+}
