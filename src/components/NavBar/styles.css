@@ -36,11 +36,21 @@ a{
     nav ul li{
         width: 100%;
     }
+    nav ul li{
+        padding: 0;
+    }
+    li a {
+        display: block;
+        width: 100vw;
+        padding: 1rem;
+
+    }
     li a:hover{
-    color:var(--text-color)
+    color:var(--text-color);
+     background-color: var(--button-color);
 }
     nav ul li:hover{
-        background-color: var(--button-color);
+       
     }
     .mobile-menu{
         display: flex;
