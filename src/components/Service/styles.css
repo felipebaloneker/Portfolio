@@ -29,15 +29,17 @@
 .service p{
     font-size:var(--font-tiny);
 }
+
 @media(max-width: 1000px){
     .service{
         margin: 0;
         padding: 1.2rem;
-        align-items: center;
-        justify-content: center;
     }
     .service h2{
         font-size: var(--font-tiny);
+    }
+    .service p{
+        font-size:var(--font-small-mobile);
     }
 
 }

@@ -21,6 +21,7 @@ html,body{
     --text-light-color:#fd4769;
     --background-image: url('../assets/images/background-600.jpg');
 
+    --font-small-mobile: .7rem;
     --font-tiny:.9rem;
     --font-small:1.09rem;
     --font-medium:1.7rem;

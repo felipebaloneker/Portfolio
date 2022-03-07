@@ -53,12 +53,15 @@
 }
 @media(max-width: 1000px){
     .box-wrp .img-wrp {
-        width: 10vw;
+        min-width: 8rem;
         height: 20vh;
-        min-width: 10rem;
+        max-width: 8rem;
         max-height: 10rem;
     }
     .text-wrp .text-area{
         max-width: 100%;
     }
+    .text-wrp p{
+    font-size: var(--font-tiny);
+}
 }

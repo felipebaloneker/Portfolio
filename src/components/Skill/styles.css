@@ -5,6 +5,7 @@
 .skill .progress{
     display: flex;
     width:10rem;
+    max-width: 10rem;
     height:1.2rem;
     border-radius: 1rem;
    border: .1rem solid var(--text-light-color);
@@ -19,4 +20,10 @@
 }
 .skill:hover .progress{
    border: .1rem solid var(--text-color);
+}
+@media(max-width: 1000px){
+    .skill .progress{
+        width: 100%;
+
+    }
 }
