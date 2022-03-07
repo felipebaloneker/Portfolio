@@ -186,4 +186,8 @@ span{
     .skills{
         width: 90%;
     }
+    .form-container{
+        width: 90%;
+        margin: 1rem 0 1rem 0;
+    }
 }
