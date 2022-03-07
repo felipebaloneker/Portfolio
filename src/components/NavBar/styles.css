@@ -10,3 +10,39 @@ a{
     text-decoration: none;
     color:var(--text-color)
 }
+.mobile-menu{
+    display: none;
+}
+
+/* Mobile Media  */
+@media(max-width: 1000px){
+    nav ul{
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        background-color: var(--background-light);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity .2s linear;
+    }
+    nav ul.active{
+        visibility: visible;
+        opacity: 1;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    li a:hover{
+    color:var(--text-color)
+}
+    nav ul li:hover{
+        background-color: var(--button-color);
+    }
+    .mobile-menu{
+        display: flex;
+    }
+}
